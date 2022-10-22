@@ -3,8 +3,7 @@
 
 访问小呆导航源项目: [github](https://github.com/xiaodai945/WEBJIKE)
 
-这是导航页面
-![snapshot](https://jiandan.neocities.org/)
+这是导航demo： [简单导航](https://jiandan.neocities.org/)
 
 主要修改点
 1. 去掉了源代码关于CMS的部分，只保留了前端的部分代码
