@@ -51,7 +51,7 @@ header .logo {
     font-size: 20px;
     height: 50px;
     margin: 0;
-    font-weight: 400;
+    font-weight: 900;
     position: relative;
     z-index: 99;
     border-bottom: 1px solid #e8e8e8;
@@ -168,7 +168,7 @@ header .animated2 .top {
     -moz-transform: translateY(8px) rotateZ(45deg);
    /* Firefox */
     -webkit-transform: translateY(8px) rotateZ(45deg);
- /* Safari 鍜� Chrome */
+ /* Safari 鍜 Chrome */
     -o-transform: translateY(8px) rotateZ(45deg);
    /* Opera */
 }
@@ -199,7 +199,7 @@ header .animated2 .bottom {
     -moz-transition: all 0.4s ease;
  /* Firefox 4 */
     -webkit-transition: all 0.4s ease;
- /* Safari 鍜� Chrome */
+ /* Safari 鍜 Chrome */
     -o-transition: all 0.4s ease;
  /* Opera */
     transform: translateZ(0);
@@ -208,7 +208,7 @@ header .animated2 .bottom {
     -moz-transform: translateZ(0);
    /* Firefox */
     -webkit-transform: translateZ(0);
- /* Safari 鍜� Chrome */
+ /* Safari 鍜 Chrome */
     -o-transform: translateZ(0);
    /* Opera */
 }
@@ -561,14 +561,14 @@ input::-webkit-input-placeholder {
         float: left;
         font-size: 22px;
         margin: 0;
-        font-weight: 400;
+        font-weight: 900;
         border: none;
     }
     header .logo a {
         display: block;
         line-height: 50px;
         color: #484848;
-        font-weight: 400;
+        font-weight: 900;
     }
     header .logo img {
         width: 30px;
@@ -1840,7 +1840,11 @@ $(function(){
     }, {
       name: '搜狗',
       url: 'https://www.sogou.com/web?query='
-    }, {
+    },  
+	 {
+      name: '头条搜索',
+      url: 'https://so.toutiao.com/search/?keyword='
+    },{
       name: '淘宝',
       url: 'https://s.taobao.com/search?q='
     }, {
@@ -1855,22 +1859,64 @@ $(function(){
     }, {
       name: '知乎',
       url: 'https://www.zhihu.com/search?type=content&q='
-    }, {
-      name: '微博',
-      url: 'https://s.weibo.com/weibo/'
-    }, {
-      name: 'Bilibili',
-      url: 'http://search.bilibili.com/all?keyword='
-    }, {
+    },
+    {
+      name: '简书',
+      url: 'https://www.jianshu.com/search?q='
+    },
+    {
+      name: '问答库',
+      url: 'https://www.asklib.com/s/'
+    },
+    {
+      name: 'V2EX',
+      url: 'https://www.sov2ex.com/?q='
+    },
+    {
+      name: '微信',
+      url: 'https://weixin.sogou.com/weixin?type=2&query='
+    }, 
+    {
       name: '豆瓣',
       url: 'https://www.douban.com/search?source=suggest&q='
-    }, {
-      name: '优酷',
-      url: 'https://so.youku.com/search_video/q_'
-    }, {
+    }, 
+    {
       name: 'GitHub',
       url: 'https://github.com/search?q='
-    }]
+    }, 
+    {
+      name: '掘金',
+      url: 'https://juejin.cn/search?query='
+    }, 
+    {
+      name: 'CSDN',
+      url: 'https://so.csdn.net/so/search?q='
+    },
+    {
+      name: '语雀',
+      url: 'https://www.yuque.com/search?q='
+    },	
+    {
+      name: '微博',
+      url: 'https://s.weibo.com/weibo?q='
+    }, 
+    {
+      name: 'Bilibili',
+      url: 'http://search.bilibili.com/all?keyword='
+    },
+    {
+      name: '优酷',
+      url: 'https://so.youku.com/search_video/q_'
+    },
+    {
+      name: '腾讯视频',
+      url: 'https://v.qq.com/x/search/?q='
+    },
+    {
+      name: '爱奇艺',
+      url: 'https://so.iqiyi.com/so/q_'
+    }
+	]
   }
   for(var i = 0; i < search.data.length; i++){
     var addList = '<li>' + search.data[i].name + '</li>'
